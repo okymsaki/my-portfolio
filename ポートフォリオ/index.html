@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What is me.</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@400;700&family=Kosugi+Maru&display=swap" rel="stylesheet">
+
+<style>
+body{
+  margin:0;
+  background:
+    radial-gradient(circle at 10px 10px, rgba(13,42,74,0.08) 1px, transparent 1px),
+    #f4f0dc;
+  background-size:20px 20px;
+  font-family:'Montserrat', sans-serif;
+  overflow-x:hidden;
+}
+
+.container{
+  position:relative;
+  min-height:100vh;
+  padding:40px;
+}
+
+/* 吹き出し */
+.bubble{
+  position:absolute;
+  top:90px;
+  left:50%;
+  transform:translateX(-50%);
+  background:rgba(255,255,255,0.6);
+  backdrop-filter:blur(8px);
+  padding:22px 38px;
+  border-radius:50px;
+  border:2px solid rgba(13,42,74,0.6);
+  font-size:18px;
+  font-family:'Kosugi Maru', sans-serif;
+  text-align:center;
+  font-weight:600;
+  z-index:3;
+}
+
+/* 巨大タイトル */
+.big-title{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  font-size:110px;
+  font-weight:700;
+  line-height:0.9;
+  color:transparent;
+  -webkit-text-stroke: 2px #0d2a4a;
+  z-index:2;
+}
+.big-title span{
+  display:inline-block;
+  position:relative;
+  font-family:'Playfair Display', serif;
+  color:#0d2a4a;
+  -webkit-text-stroke:0;
+}
+.big-title span::after{
+  content:"";
+  position:absolute;
+  left:-10%;
+  bottom:10px;
+  width:120%;
+  height:18px;
+  background:linear-gradient(90deg, #ff9ecb, #ff4fa3);
+  opacity:0.5;
+  z-index:-1;
+  border-radius:20px;
+}
+.big-title::after{
+  content:"";
+  position:absolute;
+  width:320px;
+  height:320px;
+  background:rgba(255,79,163,0.12);
+  border-radius:50%;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  z-index:-1;
+}
+
+/* 写真 */
+.photo{
+  position:absolute;
+  object-fit:cover;
+  border-radius:12px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.25);
+  outline:2px dashed rgba(13,42,74,0.15);
+  outline-offset:6px;
+}
+.p1{ width:230px; height:140px; top:40px; left:60px;}
+.p2{ width:230px; height:180px; top:190px; left:60px;}
+.p3{ width:230px; height:180px; bottom:250px; left:60px;}
+.p5{ width:220px; height:180px; top:300px; right:60px;}
+.p6{ width:220px; height:160px; bottom:100px; right:60px;}
+.p7{ width:150px; height:150px; top:40px; right:340px;}
+.p8{ width:150px; height:150px; top:40px; right:180px;}
+.p9{ width:150px; height:150px; top:40px; right:20px;}
+
+/* ボタン */
+.btn{
+  position:absolute;
+  padding:12px 26px;
+  border-radius:999px;
+  font-weight:700;
+  font-size:14px;
+  text-decoration:none;
+  background:#fff;
+  border:2px solid;
+  box-shadow:4px 4px 0;
+  transition:0.2s;
+  z-index:4;
+}
+.btn:hover{
+  transform:translate(2px,2px);
+  box-shadow:1px 1px 0;
+}
+.about{ border-color:#6b7cff; color:#6b7cff; box-shadow:4px 4px 0 #6b7cff;}
+.school{ border-color:#ff8fb1; color:#ff8fb1; box-shadow:4px 4px 0 #ff8fb1;}
+.motivation{ border-color:#3fbf9c; color:#3fbf9c; box-shadow:4px 4px 0 #3fbf9c;}
+
+.btn-about{ left:60px; top:380px;}
+.btn-school{ right:200px; top:220px;}
+.btn-motivation{ right:80px; top:500px;}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="bubble">本気で想いを形にしたいです</div>
+
+  <div class="big-title">
+    WORK<br>
+    <span>with</span>
+    ME!
+  </div>
+
+  <!-- ランダム画像 -->
+  <img src="47F6107E-B0F8-416F-A986-2F84B197D43B 2.JPEG" class="photo p1">
+  <img src="IMG_6710.JPG" class="photo p2">
+  <img src="30711264_Unknown.JPG" class="photo p3">
+  <img src="IMG_6711.jpg" class="photo p5">
+  <img src="IMG_6712 2.JPG" class="photo p6">
+  <img src="IMG_5634.JPG" class="photo p7">
+  <img src="DSC03038 7.JPG" class="photo p8">
+  <img src="DSC06008_Original.JPG" class="photo p9">
+
+  <!-- ページリンク -->
+  <a href="about.html" class="btn about btn-about">ABOUT ME</a>
+  <a href="school.html" class="btn school btn-school">CAMPUS LIFE</a>
+  <a href="motivate.html" class="btn motivation btn-motivation">志望動機</a>
+
+</div>
+</body>
+</html>

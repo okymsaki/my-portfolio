@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>自己紹介</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Kosugi+Maru&display=swap" rel="stylesheet">
+
+<style>
+body{
+  margin:0;
+  background:linear-gradient(135deg,#f4f0dc,#f6c1c9);
+  font-family:'Kosugi Maru', sans-serif;
+  color:#111;
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:40px;
+}
+
+.top{
+  display:flex;
+  gap:50px;
+  align-items:center;
+}
+
+.photo-box{ position:relative; }
+.photo-box img{
+  width:260px;
+  border-radius:20px;
+  border:3px solid #000;
+  box-shadow:10px 10px 0 #000;
+}
+
+.name{
+  font-family:'Playfair Display', serif;
+  font-size:48px;
+}
+
+.subtitle{
+  font-size:20px;
+  margin-top:10px;
+  border:2px solid #000;
+  display:inline-block;
+  padding:6px 20px;
+  border-radius:30px;
+}
+
+.about{
+  margin-top:20px;
+  line-height:1.8;
+  max-width:520px;
+}
+
+.profile{
+  margin-top:15px;
+  line-height:1.8;
+}
+
+.profile span{
+  font-weight:bold;
+}
+
+.divider{
+  margin:50px 0;
+  border-top:2px solid #000;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+}
+
+.box-title{
+  border:2px solid #000;
+  display:inline-block;
+  padding:6px 20px;
+  border-radius:30px;
+  font-weight:bold;
+  margin-bottom:20px;
+  background:#fff;
+}
+
+ul{
+  list-style:none;
+  padding:0;
+}
+
+li{
+  margin-bottom:10px;
+  position:relative;
+  padding-left:25px;
+}
+
+li:before{
+  content:"✦";
+  position:absolute;
+  left:0;
+}
+
+.strengths{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+.card{
+  background:rgba(255,255,255,0.7);
+  padding:15px;
+  border:2px solid #000;
+  border-radius:15px;
+}
+
+.card h4{ margin:0 0 5px 0; }
+
+@media(max-width:768px){
+  .top{flex-direction:column;}
+  .grid{grid-template-columns:1fr;}
+  .strengths{grid-template-columns:1fr;}
+}
+
+/* 写真の意味（文章のみ）セクション */
+.meaning-section{
+  margin-top:60px;
+}
+
+.meaning-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap:30px;
+  margin-top:20px;
+}
+
+.meaning-card{
+  background:rgba(255,255,255,0.75);
+  border:2px solid #000;
+  border-radius:18px;
+  padding:20px;
+  box-shadow:6px 6px 0 #000;
+}
+
+.meaning-card h3{
+  margin:0 0 10px 0;
+  font-size:18px;
+}
+
+.meaning-card p{
+  font-size:14px;
+  line-height:1.8;
+}
+
+@media(max-width:768px){
+  .meaning-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="top">
+    <div class="photo-box">
+      <img src="DSC06063_Original.jpg" alt="プロフィール写真">
+    </div>
+
+    <div>
+      <div class="name">奥山 咲季</div>
+      <div class="subtitle">ABOUT ME</div>
+
+      <div class="about">
+        はじめまして。<br>
+        デザインや企画を通してどう伝わるかを考えることが好きです。<br>
+　　　　 まだまだ未完成ですがどんなことにも全力で取り組みます！<br>
+        よろしくお願いいたします。
+      </div>
+
+      <div class="profile">
+        <p><span>生年月日：</span>2006年12月9日</p>
+        <p><span>出身：</span>東京都</p>
+        <p><span>在籍：</span>慶應義塾大学 文学部</p>
+    <p><span>連絡先：TEL 070-1454-0253. MAIL okym.saki12oq@gmail.com</p>
+        <p><span>興味分野：</span>WEBデザイン / 空間デザイン / 企画 / SNS運用</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="grid">
+
+    <div>
+      <div class="box-title">経歴</div>
+      <ul>
+        <li>2025年3月　都立国際高等学校 卒業</li>
+        <li>2025年4月　慶應義塾大学文学部人文社会学科 入学</li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="box-title">強み</div>
+
+      <div class="strengths">
+        <div class="card">
+          <h4>知的好奇心を持ち続ける姿勢</h4>
+          <p>知的好奇心を原動力に、何事も恐れずチャレンジ精神を持って学び体験することを日頃から心がけています。気づきや発見を形に変えることで自分ならではのアイデアを形にすることができます。</p>
+        </div>
+
+        <div class="card">
+          <h4>感性・創造性</h4>
+          <p>様々な角度から常に新たな視点で物事を見て、文章や企画に独自のアイデアを反映させることができます。型にはまらない発想で、人に伝わる表現や企画を生み出すことが好きです。</p>
+        </div>
+
+        <div class="card">
+          <h4>感性の豊かさ</h4>
+          <p>日常の些細な変化や感情の機微に気づき、それを言葉や表現に落とし込む感性の豊かさがあります。その感性を活かして、人の心に響く企画や発信を生み出すことが得意です。</p>
+        </div>
+
+        <div class="card">
+          <h4>継続力</h4>
+          <p>一度決めた目標に対し、試行錯誤を重ねながら納得のいくまで追い続けます。過程を大事にすることで着実に成果に繋げられるようにします。</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="divider"></div>
+
+<div class="meaning-section">
+  <div class="box-title">写真に込めた意味</div>
+
+  <div class="meaning-grid">
+
+    <div class="meaning-card">
+      <h3>自然・散歩</h3>
+      <p>
+        私は自然に触れることや散歩が趣味です。  
+        アナログでしか感じることのできない風の音、空気の匂い、街を歩く人々などの  
+        一瞬の風景を思い出として心に刻むことが大好きです。  
+        初めて気づく美しさに心が解けていく感覚に襲われます。
+      </p>
+    </div>
+
+    <div class="meaning-card">
+      <h3>読書</h3>
+      <p>
+        幼い頃から活字にたくさん触れてきていました。  
+        読書は知の宝庫、そして言葉の宝庫だと思っています。  
+        そこからインスピレーションを受け、日常の考え方や感じ方にも  
+        些細な変化が生まれます。  
+        本の世界で出会った言葉や価値観が、私の内側を広げてくれます。
+      </p>
+    </div>
+
+    <div class="meaning-card">
+      <h3>チアリーディング</h3>
+      <p>
+        高校卒業まで12年間行っていたスポーツです。  
+        チーム競技ならではの一体感や、  
+        目標に向かって一途になり成果を出す難しさ、  
+        また演技構成や曲編集を行い、0から1を生み出す楽しさを学びました。
+      </p>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

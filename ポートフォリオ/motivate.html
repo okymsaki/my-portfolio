@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHOCOLATE Inc. 志望動機 4軸</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Rubik', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(180deg, #e6f0fa 0%, #d0e4fb 100%);
+      color: #0a1f44;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    /* メインタイトル */
+    h1 {
+      font-family: 'Anton', sans-serif;
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 80px;
+      color: #0d3b66;
+      position: relative;
+      letter-spacing: 2px;
+    }
+
+    h1::after {
+      content: "";
+      position: absolute;
+      width: 120px;
+      height: 8px;
+      background: linear-gradient(90deg, #4a90e2, #0d3b66);
+      left: 50%;
+      bottom: -20px;
+      transform: translateX(-50%) rotate(-5deg);
+      border-radius: 4px;
+    }
+
+    section {
+      position: relative;
+      margin-bottom: 100px;
+      padding: 50px 30px;
+      border-radius: 20px;
+      background-color: rgba(255, 255, 255, 0.95);
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* 各セクション見出し */
+    section h2 {
+      font-family: 'Rubik', sans-serif;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #0d3b66;
+      position: relative;
+      padding: 10px 20px;
+      display: inline-block;
+    }
+
+    section:nth-child(2) h2 {
+      background: #d0e4fb;
+      border-radius: 30px 0 30px 0;
+      clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+    }
+    section:nth-child(3) h2 {
+      background: #4a90e2;
+      color: white;
+      border-radius: 50px 10px 50px 10px;
+    }
+    section:nth-child(4) h2 {
+      background: #a0c4ff;
+      border-radius: 10px 50px 10px 50px;
+      color: #0d3b66;
+    }
+    section:nth-child(5) h2 {
+      background: #0d3b66;
+      color: white;
+      border-radius: 20px;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #1a2d4b;
+    }
+
+    /* ステッカー */
+    .sticker {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.15;
+      z-index: 0;
+    }
+    .sticker.circle {
+      border-radius: 50%;
+    }
+    .sticker.ellipse {
+      border-radius: 50% / 30%;
+    }
+    .sticker.rect {
+      border-radius: 12px;
+    }
+
+    @media (max-width: 700px) {
+      section {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>志望動機</h1>
+
+    <section>
+      <h2>クリエイティブへの純粋な憧れ・面白さ</h2>
+      <p>私は、SNSで偶然目にした貴社の企画に衝撃を受けました。言葉の選び方、作品のデザイン、空間の使い方まで、どれも計算されながらも遊び心にあふれ、実際に体験したくなるワクワク感で溢れていました。こんな風に人を楽しませる企画が作れるんだと心から驚き、自分も同じように人の心を動かす企画を生み出したいと思いました。SNSで拡散され、多くの人に届く可能性を考えると、自分の手で企画を作り、魅力を無限に広げられることに大きな憧れを抱きます。記事で読んだ明円卓さんの「感情に触れる企画は自然に広がる」という考え方にも共感しています。</p>
+    </section>
+
+    <section>
+      <h2>企画を“考える側”に行きたい動機</h2>
+      <p>広告や企画を見ると「自分ならどう作るだろう」と考えるクセがあります。貴社の企画は意外性があり、見た人が思わず笑ったり驚いたりする瞬間を生み出しています。共感が自然に広がる仕掛けという言葉が印象的で、私も自分のアイデアで人を楽しませる経験をしたいと強く思いました。0から1を生み出す企画のプロセスや、チームで意見を出し合い形にしていく過程を体験することで、発想力を現実に活かす力を身につけたいです。</p>
+    </section>
+
+    <section>
+      <h2>自分の性格・強み × 相性</h2>
+      <p>私は好奇心が旺盛で、少し変わった発想や遊び心のあるアイデアを考えるのが好きです。普段から日常の小さな面白さや人の感情に敏感で、そうした観察力を企画に活かせると考えています。貴社の「型にはまらず、人を驚かせる企画」を生み出す文化に触れると、自分の発想や感覚が自然にフィットする実感があります。今回の機会で自分らしい発想を企画に反映させ、チームに新しい視点を加えられる経験をしたいです。</p>
+    </section>
+
+    <section>
+      <h2>成長・学びの意欲</h2>
+      <p>このインターンでは、ただ学ぶだけでなく、自分のアイデアを実践しながら成長したいと思っています。企画が形になる過程や、チームでの議論を通して、自分の感覚を現実の仕事に活かす力を磨きたいです。また、SNSで自然に拡散される仕掛けや、感情に触れる表現の設計を貴社で学び、自分の企画力や創造力をさらに高めたいです。ワクワクする企画を作りながら学び、今後に活かせる経験を得たいと強く考えています。</p>
+    </section>
+  </div>
+
+  <script>
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+    sections.forEach(section => observer.observe(section));
+
+    function createSticker(parent, size, type, x, y, rotate, color, opacity) {
+      const s = document.createElement('div');
+      s.className = 'sticker ' + type;
+      s.style.width = size + 'px';
+      s.style.height = size + 'px';
+      s.style.left = x + 'px';
+      s.style.top = y + 'px';
+      s.style.backgroundColor = color;
+      s.style.opacity = opacity;
+      s.style.transform = `rotate(${rotate}deg)`;
+      parent.appendChild(s);
+    }
+
+    sections.forEach(section => {
+      const colors = ['#0d3b66', '#1a2d4b', '#4a90e2'];
+      for(let i=0; i<5; i++) {
+        const size = Math.random()*100 + 50;
+        const type = ['circle','ellipse','rect'][Math.floor(Math.random()*3)];
+        const x = Math.random() * (section.offsetWidth - size);
+        const y = Math.random() * (section.offsetHeight - size);
+        const rotate = Math.random() * 360;
+        const color = colors[Math.floor(Math.random()*colors.length)];
+        const opacity = Math.random()*0.15 + 0.05;
+        createSticker(section, size, type, x, y, rotate, color, opacity);
+      }
+    });
+  </script>
+
+</body>
+</html>
